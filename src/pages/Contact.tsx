@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/components/ui/use-toast";
+import Navbar from "@/components/Navbar";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -16,6 +17,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       <div className="container mx-auto px-6 py-24 pt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

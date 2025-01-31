@@ -9,10 +9,10 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <div className="pt-16">
-        <AboutSection />
-        <MissionSection />
-        <CEOSection />
-        <BlogsSection />
+      <AboutSection />
+      <MissionSection />
+      <CEOSection />
+      <BlogsSection />
       </div>
     </div>
   );

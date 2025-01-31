@@ -18,10 +18,6 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <AboutSection />
-      <MissionSection />
-      <CEOSection />
-      <BlogsSection />
       <WhySection />
       <JobSeekersSection />
       <HiringManagersSection />
@@ -29,7 +25,6 @@ const Index = () => {
       <StatsSection />
       <TestimonialsSection />
       <PartnersSection />
-      <ContactSection />
     </div>
   );
 };

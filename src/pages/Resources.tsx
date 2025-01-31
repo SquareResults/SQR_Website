@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FileText, Video, BookOpen, Download } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
+import Navbar from "@/components/Navbar";
 
 const Resources = () => {
   const resources = [
@@ -29,6 +30,7 @@ const Resources = () => {
 
   return (
     <div className="min-h-screen bg-background">
+       <Navbar />
       <div className="container mx-auto px-6 py-24 pt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
