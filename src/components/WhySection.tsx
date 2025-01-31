@@ -30,7 +30,7 @@ const WhySection = () => {
             className="relative"
           >
             <img
-              src="/lovable-uploads/9c68146b-3348-46d8-aabc-2cf248041ea6.png"
+              src="/images/why_sqr.png"
               alt="Team collaboration"
               className="rounded-2xl shadow-xl"
             />

@@ -5,19 +5,19 @@ const features = [
   {
     title: "Access to Quality Talent",
     description: "AI-driven matching helps you find the right candidates faster.",
-    image: "/lovable-uploads/5332452b-a174-478b-a153-2f247635d9e4.png",
+    image: "/images/quality_talent.png",
     icon: Search
   },
   {
     title: "Seamless Hiring Workflow",
     description: "Reduce time-to-hire with a structured and efficient process.",
-    image: "/lovable-uploads/5332452b-a174-478b-a153-2f247635d9e4.png",
+    image: "/images/seamless_workflow.png",
     icon: Clock
   },
   {
     title: "Better Candidate Engagement",
     description: "Build real connections with top talent and avoid drop-offs.",
-    image: "/lovable-uploads/5332452b-a174-478b-a153-2f247635d9e4.png",
+    image: "/images/candidate_engagement.png",
     icon: Users
   }
 ];

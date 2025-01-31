@@ -36,6 +36,7 @@ const PartnersSection = () => {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
+            className="flex justify-center"
           >
             <img
               src="/images/partners.png"
@@ -54,20 +55,16 @@ const PartnersSection = () => {
               Our Partners
             </motion.h2>
 
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-6 md:grid-cols-3 lg:grid-cols-3 gap-8">
               {partners.map((partner, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-gray-50 rounded-full p-4 hover:bg-gray-100 transition-colors"
+                  className="flex items-center justify-center"
                 >
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    className="w-full h-auto"
-                  />
+                  <img src={partner.logo} alt={partner.name} className="w-32 h-32 object-contain" />
                 </motion.div>
               ))}
             </div>
