@@ -4,7 +4,7 @@ import { FileText, Users, CheckCircle } from "lucide-react";
 const features = [
   {
     title: "No More Black Holes",
-    description: "Get real visibility and feedback on your applications.",
+    description: "Get real visibility and feedback on your job applications.",
     image: "/images/blackhole.png",
     icon: FileText
   },
