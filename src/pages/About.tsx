@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/AboutSection";
 import MissionSection from "@/components/MissionSection";
 import CEOSection from "@/components/CEOSection";
-import BlogsSection from "@/components/BlogsSection";
 
 const About = () => {
   return (
@@ -12,7 +11,6 @@ const About = () => {
       <AboutSection />
       <MissionSection />
       <CEOSection />
-      <BlogsSection />
       </div>
     </div>
   );
