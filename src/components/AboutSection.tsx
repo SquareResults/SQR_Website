@@ -10,8 +10,8 @@ const AboutSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-4xl font-bold text-secondary mb-6">ABOUT</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <h2 className="text-5xl font-extrabold text-[#081321] mb-8">About Us</h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
               At SquareResults, we are redefining the future of talent acquisition and job searching. Our ecosystem
               —SquareTop, SquareCircle, and RADAR—creates a seamless, engaging, and empowering experience for
               both candidates and recruiters. We eliminate the frustration of traditional hiring processes with AI-driven 
