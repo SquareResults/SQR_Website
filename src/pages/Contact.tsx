@@ -26,7 +26,7 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-6">
-            Get in <span className="text-primary">Touch</span>
+            Get in <span className="text-[#4DCCE6]">Touch</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Have questions? We'd love to hear from you
@@ -60,7 +60,7 @@ const Contact = () => {
               <Card className="text-center">
                 <CardContent className="pt-6">
                   <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10">
-                    <item.icon className="w-6 h-6 text-primary" />
+                    <item.icon className="w-6 h-6 text-[#4DCCE6]" />
                   </div>
                   <h3 className="font-semibold mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.detail}</p>
@@ -115,7 +115,7 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors flex items-center justify-center gap-2"
+                  className="w-full bg-[#4DCCE6] text-white px-6 py-3 rounded-lg hover:bg-[#45B5B5] transition-colors flex items-center justify-center gap-2"
                 >
                   Send Message
                   <Send className="w-4 h-4" />
