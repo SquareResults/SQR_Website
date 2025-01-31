@@ -14,18 +14,21 @@ const MissionSection = () => {
           <h2 className="text-4xl font-bold text-secondary mb-8">Mission Statement</h2>
           <div className="relative">
             <img
-              src="/lovable-uploads/ff22ec66-2c1b-44d9-bf10-a30ecf286d97.png"
+              src="/lovable-uploads/9655dd67-72db-49f7-88b2-a0b84b8e81b8.png"
               alt="Team"
               className="w-full rounded-lg shadow-xl mb-8"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <button className="bg-white/90 p-4 rounded-full shadow-lg hover:bg-white transition-colors">
-                <Play className="w-8 h-8 text-primary" />
+              <button 
+                className="bg-white/90 p-4 rounded-full shadow-lg hover:bg-white transition-colors group"
+                onClick={() => console.log("Play video clicked")}
+              >
+                <Play className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
               </button>
             </div>
           </div>
           <p className="text-lg text-gray-600 leading-relaxed">
-            At SquareResults, our mission is to revolutionise talent acquisition by making job searching
+            At SquareResults, our mission is to revolutionize talent acquisition by making job searching
             and hiring a swift, transparent, and empowering experience. We leverage cutting-edge
             technology and community-driven insights to eliminate inefficiencies, ensuring candidates
             feel confident and recruiters make smarter, faster hiring decisions.
