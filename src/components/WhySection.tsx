@@ -13,7 +13,7 @@ const WhySection = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-secondary">
               WHY <br />
-              <span className="text-primary">SQUARERESULTS?</span>
+              <span className="text-[#4DCCE6]">SQUARERESULTS?</span>
             </h2>
             <p className="text-lg text-gray-600">
               SquareResults is revolutionising the hiring process by creating an ecosystem that

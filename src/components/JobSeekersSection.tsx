@@ -52,7 +52,7 @@ const JobSeekersSection = () => {
                 />
               </div>
               <div className="p-6">
-                <feature.icon className="w-10 h-10 text-primary mb-4" />
+                <feature.icon className="w-10 h-10 text-[#4DCCE6] mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
