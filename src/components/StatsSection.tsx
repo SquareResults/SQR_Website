@@ -3,12 +3,12 @@ import { Users, Building, Network } from "lucide-react";
 
 const stats = [
   {
-    number: "2M",
+    number: "50K",
     label: "NETWORK",
     icon: Network
   },
   {
-    number: "20K",
+    number: "3K",
     label: "RECRUITERS",
     icon: Users
   },

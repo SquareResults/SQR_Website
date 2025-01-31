@@ -66,15 +66,19 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
+            <a href="https://theradarlist.com/" target="_blank" rel="noopener noreferrer">
             <button className="group px-8 py-3 bg-[#4DCCE6] text-black font-semibold rounded-full hover:shadow-lg hover:shadow-[#4DCCE6]/30 transition-all duration-200 transform hover:scale-105 relative overflow-hidden">
               <span className="relative z-10 group-hover:text-white">Job Seekers</span>
               <span className="absolute inset-0 bg-[#235B9C] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
               <ChevronRight className="inline-block ml-2 w-5 h-5" />
             </button>
+            </a>
+            <a href="https://squarecircle.group/" target="_blank" rel="noopener noreferrer">
             <button className="group px-8 py-3 bg-transparent text-[#4DCCE6] border-2 border-[#4DCCE6] rounded-full hover:bg-[#4DCCE6]/10 transition-colors duration-200 transform hover:scale-105">
               <span className="relative z-10">Hiring Partners</span>
               <ChevronRight className="inline-block ml-2 w-5 h-5" />
             </button>
+            </a>
           </motion.div>
         </div>
       </div>

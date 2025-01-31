@@ -1,9 +1,31 @@
 import { motion } from "framer-motion";
 
-const partners = Array(6).fill({
-  logo: "/lovable-uploads/9655dd67-72db-49f7-88b2-a0b84b8e81b8.png",
-  name: "Partner"
-});
+const partners = [
+  {
+    logo: "/images/amazon.png",
+    name: "Amazon"
+  },
+  {
+    logo: "/images/microsoft.png",
+    name: "Microsoft"
+  },
+  {
+    logo: "/images/oracle.png",
+    name: "Oracle"
+  },
+  {
+    logo: "/images/salesforce.png",
+    name: "Salesforce"
+  },
+  {
+    logo: "/images/twich.png",
+    name: "Twitch"
+  },
+  {
+    logo: "/images/zillow.png",
+    name: "Zillow"
+  }
+];
 
 const PartnersSection = () => {
   return (
@@ -16,7 +38,7 @@ const PartnersSection = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/lovable-uploads/9655dd67-72db-49f7-88b2-a0b84b8e81b8.png"
+              src="/images/partners.png"
               alt="Team collaboration"
               className="rounded-2xl shadow-xl"
             />
