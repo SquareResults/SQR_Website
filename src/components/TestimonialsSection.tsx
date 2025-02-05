@@ -20,13 +20,13 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-24 bg-[#4DCCE6] text-white">
+    <section className="py-24 bg-sky-200 text-white">
       <div className="container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-center mb-16"
+          className="text-4xl text-[#1E3A8A] font-bold text-center mb-16"
         >
           Read the reviews
         </motion.h2>

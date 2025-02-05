@@ -18,7 +18,7 @@ const partners = [
     name: "Salesforce"
   },
   {
-    logo: "/images/twitch.png",
+    logo: "/images/twicth.png",
     name: "Twitch"
   },
   {

@@ -5,19 +5,19 @@ const features = [
   {
     title: "Access to Quality Talent",
     description: "AI-driven matching helps you find the right candidates faster.",
-    image: "/images/quality_talent.png",
+    image: "/images/quality_talent.gif",
     icon: Search
   },
   {
     title: "Seamless Hiring Workflow",
     description: "Reduce time-to-hire with a structured and efficient process.",
-    image: "/images/seamless_workflow.png",
+    image: "/images/seamless_workflow.gif",
     icon: Clock
   },
   {
     title: "Better Candidate Engagement",
     description: "Build real connections with top talent and avoid drop-offs.",
-    image: "/images/candidate_engagement.png",
+    image: "/images/candidate_engagement.gif",
     icon: Users
   }
 ];
@@ -52,7 +52,7 @@ const HiringManagersSection = () => {
                 />
               </div>
               <div className="p-6">
-                <feature.icon className="w-10 h-10 text-[#4DCCE6] mb-4" />
+                <feature.icon className="w-10 h-10 text-[#1E3A8A] mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>

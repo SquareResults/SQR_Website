@@ -5,19 +5,19 @@ const features = [
   {
     title: "No More Black Holes",
     description: "Get real visibility and feedback on your job applications.",
-    image: "/images/blackhole.png",
+    image: "/images/resume_blackhole.gif",
     icon: FileText
   },
   {
     title: "Smarter Job Matching",
     description: "Connect with roles that truly fit your skills and aspirations.",
-    image: "/images/job_matching.png",
+    image: "/images/job_matching.gif",
     icon: Users
   },
   {
     title: "Transparent Hiring Process",
     description: "No ghosting, no false promises—just real opportunities.",
-    image: "/images/transparent_hiring.png",
+    image: "/images/transparent_hiring.gif",
     icon: CheckCircle
   }
 ];
@@ -52,7 +52,7 @@ const JobSeekersSection = () => {
                 />
               </div>
               <div className="p-6">
-                <feature.icon className="w-10 h-10 text-[#4DCCE6] mb-4" />
+                <feature.icon className="w-10 h-10 text-[#1E3A8A] mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>

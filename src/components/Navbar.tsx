@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -22,6 +22,10 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -55,7 +59,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <Link to={item === 'home' ? '/' : `/${item}`} onClick={toggleMenu}>
+              <Link to={item === 'home' ? '/' : `/${item}`} onClick={closeMenu}>
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </Link>
             </motion.div>

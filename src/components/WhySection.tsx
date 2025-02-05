@@ -13,7 +13,7 @@ const WhySection = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-secondary">
               WHY <br />
-              <span className="text-[#4DCCE6]">SQUARERESULTS?</span>
+              <span className="text-[#1E3A8A]">SQUARERESULTS?</span>
             </h2>
             <p className="text-lg text-gray-600">
               SquareResults is revolutionising the hiring process by creating an ecosystem that
@@ -27,14 +27,15 @@ const WhySection = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="relative"
+            className="relative p-4 bg-white rounded-2xl shadow-xl overflow-hidden"
           >
             <img
               src="/images/why_sqr.png"
               alt="Team collaboration"
-              className="rounded-2xl shadow-xl"
+              className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-50" />
+            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-20 rounded-2xl pointer-events-none" />
           </motion.div>
         </div>
       </div>
