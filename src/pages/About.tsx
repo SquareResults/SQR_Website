@@ -10,8 +10,8 @@ const About = () => {
       <Navbar />
       <div className="pt-16">
         <AboutSection />
-        <MissionSection />
         <CEOSection />
+        <MissionSection />
         <TeamSection />
       </div>
     </div>

@@ -44,6 +44,13 @@ const Navbar = () => {
             <Link to={item === 'home' ? '/' : `/${item}`}>{item.charAt(0).toUpperCase() + item.slice(1)}</Link>
           </motion.div>
         ))}
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="px-4 py-2 bg-[#4DCCE6] text-black font-semibold rounded-full hover:bg-[#3BB0C1] transition-colors duration-200"
+        >
+          <Link to="/book-demo">Book a Demo</Link>
+        </motion.button>
       </div>
       <div className="md:hidden flex items-center">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -64,6 +71,13 @@ const Navbar = () => {
               </Link>
             </motion.div>
           ))}
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="px-4 py-2 bg-[#4DCCE6] text-black font-semibold rounded-full hover:bg-[#3BB0C1] transition-colors duration-200"
+          >
+            <Link to="/book-demo" onClick={closeMenu}>Book a Demo</Link>
+          </motion.button>
         </div>
       )}
     </nav>
