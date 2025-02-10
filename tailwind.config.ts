@@ -51,6 +51,9 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        antonio: ['Antonio', 'sans-serif'],
+      },
       keyframes: {
         "fade-up": {
           "0%": {
