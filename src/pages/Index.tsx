@@ -8,6 +8,7 @@ import WhySection from "@/components/WhySection";
 import JobSeekersSection from "@/components/JobSeekersSection";
 import HiringManagersSection from "@/components/HiringManagersSection";
 import KeyFeatures from "@/components/KeyFeatures";
+import UpcomingEvents from "@/components/UpcomingEvents";
 import ServicesSection from "@/components/ServicesSection";
 import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -26,6 +27,7 @@ const Index = () => {
       {/* <ServicesSection /> */}
       {/* <StatsSection /> */}
       <TestimonialsSection />
+      <UpcomingEvents/>
       <PartnersSection />
     </div>
   );
