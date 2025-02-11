@@ -31,13 +31,14 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-32 bg-sky-200 text-white">
-      <div className="container mx-auto px-6">
+    <section className="relative w-full py-32 overflow-hidden bg-black bg-opacity-70 text-white">
+      <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+      <div className="relative z-10 container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl text-[#1E3A8A] font-bold text-center mb-16 font-antonio"
+          className="text-4xl text-white font-bold text-center mb-16"
         >
           Read the reviews
         </motion.h2>
@@ -49,13 +50,15 @@ const TestimonialsSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white text-black rounded-lg shadow-lg p-6 min-w-[400px] flex flex-col justify-between font-antonio" // Adjust min-width as needed
+              className="bg-white text-black rounded-lg shadow-lg p-6 min-w-[400px] flex flex-col text-wrap justify-between" 
             >
               <div>
                 <p className="text-lg mb-4">"{testimonial.review}"</p>
               </div>
-              <p className="font-bold mt-auto">{testimonial.name}</p>
-              <p className="text-sm text-gray-600">{testimonial.position}</p>
+              <div>
+                <h3 className="text-xl font-bold text-[#081321]">{testimonial.name}</h3>
+                <p className="text-sm text-gray-500">{testimonial.position}</p>
+              </div>
             </motion.div>
           ))}
         </div>

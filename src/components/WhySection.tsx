@@ -12,7 +12,7 @@ const WhySection = () => {
             transition={{ duration: 0.5 }}
             className="space-y-6"
           >
-            <h2 className="text-4xl text-[#1E3A8A] md:text-5xl font-bold text-secondary">
+            <h2 className="text-4xl text-[#1D066F] md:text-5xl font-bold text-secondary">
               PURPOSE <br />
               {/* <span className="text-[#1E3A8A]">PURPOSE</span> */}
             </h2>
