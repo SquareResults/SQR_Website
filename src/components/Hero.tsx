@@ -197,7 +197,7 @@ const Hero = () => {
         style={{ background: 'semi-transparent' }}
       />
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white bg-black bg-opacity-30 p-6 rounded-lg">
+      <div className="relative z-1 flex flex-col items-center justify-center h-full text-center text-white bg-black bg-opacity-30 p-6 rounded-lg">
         <h1 className="text-10xl md:text-7xl font-bold mb-6 mt-80">
           <span className="text-white tracking-wider">Step Into Your Dream Job</span>
           <br />
