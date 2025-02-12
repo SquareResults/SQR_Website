@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full p-4 flex items-center justify-between z-10 transition-all duration-300 ${scrolled ? 'bg-[#081321]' : 'bg-[#081321]'}`}>
+    <nav className={`fixed top-0 left-0 w-full p-4 flex items-center justify-between z-20 transition-all duration-300 bg-[#081321]`}>
       <Link to="/" className="flex items-center">
         <img src="/images/SQRlogo.jpg" alt="Logo" className="w-15 h-14" />
       </Link>
