@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full p-4 flex items-center justify-between z-10 transition-all duration-300 ${scrolled ? 'bg-[#081321]/50 backdrop-blur-md' : 'bg-[#081321]/50'}`}>
+    <nav className={`fixed top-0 left-0 w-full p-4 flex items-center justify-between z-10 transition-all duration-300 ${scrolled ? 'bg-[#081321]' : 'bg-[#081321]'}`}>
       <Link to="/" className="flex items-center">
         <img src="/images/SQRlogo.jpg" alt="Logo" className="w-15 h-14" />
       </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.9 }}
           className="px-4 py-2 bg-[#FFFFFF] text-black font-semibold rounded-full hover:bg-[#3BB0C1] transition-colors duration-200"
         >
-          <Link to="/book-demo">Login</Link>
+          <Link to="/book-demo">Book An Appointment</Link>
         </motion.button>
       </div>
       <div className="md:hidden flex items-center">
@@ -76,7 +76,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
             className="px-4 py-2 bg-[#4DCCE6] text-black font-semibold rounded-full hover:bg-[#3BB0C1] transition-colors duration-200"
           >
-            <Link to="/book-demo" onClick={closeMenu}>Login</Link>
+            <Link to="/book-demo" onClick={closeMenu}>Book An Appointment</Link>
           </motion.button>
         </div>
       )}

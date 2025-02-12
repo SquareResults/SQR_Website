@@ -12,12 +12,15 @@ const WhySection = () => {
             transition={{ duration: 0.5 }}
             className="space-y-6"
           >
-            <h2 className="text-4xl text-[#1D066F] md:text-5xl font-bold text-secondary">
-              PURPOSE <br />
-              {/* <span className="text-[#1E3A8A]">PURPOSE</span> */}
+            <h2 className="text-4xl md:text-5xl font-bold text-secondary">
+              WHY <br />
+              <span className="text-[#1E3A8A]">SQUARERESULTS?</span>
             </h2>
             <p className="text-lg text-gray-600">
-              SquareCircle is a dedicated community for Talent Acquisition (TA) professionals and HR leaders across industries. It’s built to address the biggest challenges in hiring—from sourcing top candidates to improving hiring strategies—by fostering meaningful discussions, sharing expert insights, and providing exclusive resources.
+              SquareResults is revolutionising the hiring process by creating an ecosystem that
+              bridges the gaps in recruitment. We eliminate the chaos, improve
+              transparency, and prioritise human connections—ensuring job seekers find
+              real opportunities and recruiters discover the best talent, faster.
             </p>
           </motion.div>
           
@@ -27,11 +30,13 @@ const WhySection = () => {
             transition={{ duration: 0.5 }}
             className={`relative p-4 bg-white rounded-2xl shadow-xl overflow-hidden ${styles['image-container']}`}
           >
-              <img
-                src="/images/why_sqr.png"
-                alt="Team collaboration"
-                className="w-full h-auto"
-              />
+            <img
+              src="/images/why_sqr.png"
+              alt="Team collaboration"
+              className="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+            />
+            {/* <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-20 rounded-2xl pointer-events-none" /> */}
           </motion.div>
         </div>
       </div>

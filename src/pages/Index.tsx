@@ -21,13 +21,13 @@ const Index = () => {
       <Navbar />
       <Hero />
       <WhySection />
-      <KeyFeatures/>
-      {/* <JobSeekersSection /> */}
-      {/* <HiringManagersSection /> */}
-      {/* <ServicesSection /> */}
-      {/* <StatsSection /> */}
+      {/* <KeyFeatures/> */}
+      <JobSeekersSection /> 
+      <HiringManagersSection />
+      <ServicesSection />
+      <StatsSection />
       <TestimonialsSection />
-      <UpcomingEvents/>
+      {/* <UpcomingEvents/> */}
       <PartnersSection />
     </div>
   );
