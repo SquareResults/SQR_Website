@@ -31,14 +31,14 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="relative w-full py-32 overflow-hidden bg-black bg-opacity-70 text-white">
+    <section className="relative w-full py-8 overflow-hidden bg-[#1D066F]/40 bg-opacity-70 text-white">
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
       <div className="relative z-10 container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl text-white font-bold text-center mb-16"
+          className="text-4xl text-white font-bold text-center mb-8"
         >
           Read the reviews
         </motion.h2>

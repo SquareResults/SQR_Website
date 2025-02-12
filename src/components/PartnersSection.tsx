@@ -64,7 +64,7 @@ const PartnersSection = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="flex items-center justify-center"
                 >
-                  <img src={partner.logo} alt={partner.name} className="w-32 h-32 object-contain" />
+                  <img src={partner.logo} alt={partner.name} className="w-24 h-24 object-contain" /> {/* Set fixed size */}
                 </motion.div>
               ))}
             </div>

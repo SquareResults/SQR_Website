@@ -61,12 +61,12 @@ const FeatureCard = ({ feature, index }: { feature: typeof features[0], index: n
         
         <div className="flex items-center gap-4 mb-4">
           <div className="p-3 rounded-2xl bg-gray-50 group-hover:bg-white transition-colors duration-500">
-            <feature.icon className="w-6 h-8 text-gray-700" />
+            <feature.icon className="w-8 h-8 text-[#1D066F]" />
           </div>
-          <h3 className="text-xl font-semibold text-gray-900">{feature.title}</h3>
+          <h3 className="text-2xl font-semibold text-[#1D066F]">{feature.title}</h3>
         </div>
         
-        <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+        <p className="text-gray-700 leading-relaxed">{feature.description}</p>
       </div>
     </motion.div>
   );
@@ -104,7 +104,7 @@ const JobSeekersSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="hidden md:block">
+            <div className="hidden md:block ">
               <CarouselPrevious className="left-0" />
               <CarouselNext className="right-0" />
             </div>
@@ -118,10 +118,10 @@ const JobSeekersSection = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800 inline-block mb-4">
+            <span className="px-4 py-1.5 rounded-full text-xl font-medium bg-gray-100 text-gray-800 inline-block mb-4">
               For Job Seekers
             </span>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-[#1D066F] mb-4">
               Transform Your Job Search
             </h2>
             <p className="text-lg text-gray-600">

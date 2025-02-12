@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { DemoForm } from './DemoForm';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [showDemoForm, setShowDemoForm] = useState(false);
   const location = useLocation();
   const pathname = location.pathname;
 
@@ -28,7 +30,14 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const handleDemoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setShowDemoForm(true);
+    closeMenu();
+  };
+
   return (
+    <>
     <nav className={`fixed top-0 left-0 w-full p-4 flex items-center justify-between z-20 transition-all duration-300 bg-[#081321]`}>
       <Link to="/" className="flex items-center">
         <img src="/images/SQRlogo.jpg" alt="Logo" className="w-15 h-14" />
@@ -44,13 +53,14 @@ const Navbar = () => {
             <Link to={item === 'home' ? '/' : `/${item}`}>{item.charAt(0).toUpperCase() + item.slice(1)}</Link>
           </motion.div>
         ))}
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="px-4 py-2 bg-[#FFFFFF] text-black font-semibold rounded-full hover:bg-[#3BB0C1] transition-colors duration-200"
-        >
-          <Link to="/book-demo">Book An Appointment</Link>
-        </motion.button>
+         <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={handleDemoClick}
+            className="px-4 py-2 bg-[#FFFFFF] text-black font-semibold rounded-full hover:bg-[#1D066F/90] transition-colors duration-200"
+          >
+            Book An Appointment
+          </motion.button>
       </div>
       <div className="md:hidden flex items-center">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -81,6 +91,8 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    <DemoForm open={showDemoForm} onOpenChange={setShowDemoForm} />
+    </>
   );
 };
 

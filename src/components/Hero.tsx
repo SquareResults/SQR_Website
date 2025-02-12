@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from 'react';
+import { ChevronRight } from "lucide-react"
+import { motion } from "framer-motion"
 
 const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -206,11 +208,40 @@ const Hero = () => {
         {/* <p className="text-xl text-white mb-12 max-w-2xl mx-auto">
           A thriving community of HR and TA professionals sharing insights, solving hiring challenges, and shaping the future of recruitment.
         </p> */}
-        <a href="https://theradarlist.com/" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://theradarlist.com/" target="_blank" rel="noopener noreferrer">
           <button className="group relative px-20 py-3 bg-[#1D066F] text-white font-semibold rounded-full hover:shadow-lg hover:shadow-[#063970]/30 transition-all duration-200 transform overflow-hidden flex items-center">
             <span className="text-xl relative z-10 group-hover:text-black">Join</span>
           </button>
-        </a>
+        </a> */}
+        <motion.div
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+            transition={{ delay: 0.4, duration: 0.5 }}
+          >
+            <a href="https://theradarlist.com/" target="_blank" rel="noopener noreferrer">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="group relative px-8 py-3 bg-[#1D066F] text-white font-semibold rounded-full hover:shadow-lg hover:shadow-[#1E3A8A]/30 transition-all duration-200 transform overflow-hidden flex items-center"
+              >
+                <span className="relative z-10 group-hover:text-white">Job Seekers</span>
+                <ChevronRight className="inline-block ml-2 w-5 h-5" />
+                <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-[#1D066F] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-pulse" />
+                <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-20 rounded-full pointer-events-none" />
+              </motion.button>
+            </a>
+            <a href="https://squarecircle.group/" target="_blank" rel="noopener noreferrer">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="group relative px-8 py-3 bg-white text-[#1D066F] border-2 border-[#1D066F] rounded-full hover:bg-white/90 text-black transition-colors duration-200 transform flex items-center"
+              >
+                <span className="relative z-10">Hiring Partners</span>
+                <ChevronRight className="inline-block ml-2 w-5 h-5" />
+                <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-[#1E3A8A] rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-pulse" />
+                <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-20 rounded-full pointer-events-none" />
+              </motion.button>
+            </a>
+          </motion.div>
       </div>
     </div>
   );

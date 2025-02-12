@@ -5,17 +5,17 @@ const stats = [
   {
     number: "50K",
     label: "NETWORK",
-    icon: Network
+    icon : "/images/network.png"
   },
   {
     number: "3K",
     label: "RECRUITERS",
-    icon: Users
+    icon: "/images/recruiters.png"
   },
   {
     number: "1100",
     label: "COMPANIES",
-    icon: Building
+    icon: "/images/companies.png"
   }
 ];
 
@@ -32,7 +32,7 @@ const StatsSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center"
             >
-              <stat.icon className="w-12 h-12 text-[#1E3A8A] mx-auto mb-4" />
+              <img src={stat.icon} alt={stat.label} className="w-24 h-24 text-[#1E3A8A] mx-auto mb-4" />
               <motion.div
                 initial={{ scale: 0.5 }}
                 whileInView={{ scale: 1 }}
