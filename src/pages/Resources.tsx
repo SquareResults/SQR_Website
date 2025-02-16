@@ -43,7 +43,7 @@ const Resources = () => {
             Resource <span className="text-[#4DCCE6]">Center</span>
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-            Access our comprehensive library of hiring resources
+            Access our comprehensive library of hiring resources.
           </p>
         </motion.div>
 
@@ -90,7 +90,7 @@ const Resources = () => {
         >
           <h2 className="text-2xl font-bold text-[#081321] mb-4">Need Custom Resources?</h2>
           <p className="text-gray-700 mb-6">
-            We can create tailored resources specific to your industry and requirements
+            We can create tailored resources specific to your industry and requirements.
           </p>
           <a
             href="/contact"

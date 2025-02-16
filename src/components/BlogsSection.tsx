@@ -46,7 +46,7 @@ const BlogsSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold text-white mb-6">Blogs</h2>
-          <p className="text-lg text-gray-400">Stay updated with the latest insights in recruitment and HR technology</p>
+          <p className="text-lg text-gray-400">Stay updated with the latest insights in recruitment and HR technology.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
