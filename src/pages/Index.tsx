@@ -14,6 +14,7 @@ import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import PartnersSection from "@/components/PartnersSection";
 import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
       <TestimonialsSection />
       {/* <UpcomingEvents/> */}
       <PartnersSection />
+      <Footer/>
     </div>
   );
 };
