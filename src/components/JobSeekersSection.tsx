@@ -15,21 +15,21 @@ const features = [
   {
     title: "No More Black Holes",
     description: "Get real visibility and feedback on your job applications.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: "/images/resume_blackhole.gif",
     icon: FileText,
     gradient: "from-rose-100 to-teal-100"
   },
   {
     title: "Smarter Job Matching",
     description: "Connect with roles that truly fit your skills and aspirations.",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    image: "/images/job_matching.gif",
     icon: Users,
     gradient: "from-indigo-100 to-pink-100"
   },
   {
     title: "Transparent Hiring Process",
     description: "No ghosting, no false promises—just real opportunities.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    image: "/images/transparent_hiring.gif",
     icon: CheckCircle,
     gradient: "from-amber-100 to-violet-100"
   }
