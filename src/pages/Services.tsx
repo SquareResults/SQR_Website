@@ -18,12 +18,12 @@ const services = [
 
 const community = [
   {
-    icon: Building,
+    icon: "/images/SquareTop.png",
     title: "SquareTop",
     description: "SquareTop is an exclusive network for corporate leaders, facilitating connections with peers and industry experts. This community encourages strategic discussions and alliances to elevate recruitment standards and offer valuable insights in the recruitment landscape.",
   },
   {
-    icon: ChartBar,
+    icon: "/images/SquareCircle.png",
     title: "SquareCircle",
     description: "SquareCircle is an exclusive network dedicated to empowering corporate and business professionals. Our platform fosters connection and insight sharing, helping recruiters efficiently find the talent they need.",
   }
@@ -88,7 +88,7 @@ const Services = () => {
                 <Card className="h-full bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                   <CardHeader>
                     <div className="w-32 h-32 bg-[#4DCCE6]/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                      <item.icon className="w-32 h-32 text-[#4DCCE6]" />
+                    <img src={item.icon} alt={item.title} className="w-32 h-32" />
                     </div>
                     <CardTitle className="text-[#081321] text-2xl flex items-center justify-center ">{item.title}</CardTitle>
                     <CardDescription className="text-xl text-gray-600 text-justify">{item.description}</CardDescription>
