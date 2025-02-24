@@ -70,7 +70,7 @@ const TestimonialsSection = () => {
                 })}
               </div>
               <div>
-                <p className="text-lg mb-4">"{testimonial.review}"</p>
+                <p className="text-sm mb-4">"{testimonial.review}"</p>
               </div>
               <div className="mt-auto">
                 <h3 className="text-xl font-bold text-[#081321]">{testimonial.name}</h3>
