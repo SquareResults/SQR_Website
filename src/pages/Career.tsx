@@ -1,6 +1,6 @@
 import CareersSection from "@/components/CareersSection"
 import Navbar from "@/components/Navbar"
-import { Footer } from "react-day-picker";
+import Footer from "@/components/Footer";
 
 const Career = () =>{
     return (
@@ -8,7 +8,7 @@ const Career = () =>{
             <Navbar />
             <div className="pt-16">
                 <CareersSection/>
-                <Footer/>
+                <Footer />
             </div>
         </div>
     )

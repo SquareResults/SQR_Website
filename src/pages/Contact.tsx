@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import Navbar from "@/components/Navbar";
 import ContactSection from "@/components/ContactSection";
-import { Footer } from "react-day-picker";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
  
