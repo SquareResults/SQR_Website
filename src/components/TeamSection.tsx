@@ -103,7 +103,8 @@ const TeamSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-[#081321] mb-8">The Team</h2>
+          <h2 className="text-4xl font-bold text-[#081321] mb-8 tracking-wide">Build By Passionate People</h2>
+          <p className="mt-10 text-3xl text-[#081321] mb-8 tracking-wide">Meet Our Core Team</p>
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
@@ -115,7 +116,7 @@ const TeamSection = () => {
               className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
             >
               <div className="flex items-center mb-4">
-                <div className="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+                {/* <div className="w-16 h-16 bg-gray-300 rounded-full mr-4"></div> */}
                 <div>
                   <h3 className="text-xl font-bold text-[#081321]">{member.name}</h3>
                   <a href={member.linkedin} className="text-[#4DCCE6] hover:text-[#45B5B5] transition-colors">

@@ -4,6 +4,8 @@ import MissionSection from "@/components/MissionSection";
 import CEOSection from "@/components/CEOSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "../components/Footer";
+import CoreValues from "@/components/CoreValues";
+import ComeJoinUs from "@/components/ComeJoinUs";
 
 const About = () => {
   return (
@@ -13,7 +15,9 @@ const About = () => {
         <AboutSection />
         <CEOSection />
         <MissionSection />
+        <CoreValues/>
         <TeamSection />
+        <ComeJoinUs />
         <Footer />
       </div>
     </div>

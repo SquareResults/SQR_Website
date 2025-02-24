@@ -43,7 +43,7 @@ const Navbar = () => {
         <img src="/images/SQRlogo.jpg" alt="Logo" className="w-15 h-14" />
       </Link>
       <div className="hidden md:flex items-center text-xl space-x-20 ml-auto">
-        {['home', 'about', 'services', 'resources', 'contact',''].map((item) => (
+        {['home', 'about', 'services', 'resources', 'contact','career',''].map((item) => (
           <motion.div
             key={item}
             className={`text-white transition-colors duration-200 ${isActive(item === 'home' ? '/' : `/${item}`) ? 'text-[#4DCCE6]' : 'hover:text-[#4DCCE6]'}`}
@@ -69,7 +69,7 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-[#081321] text-white flex flex-col items-center space-y-4 py-4 md:hidden">
-          {['home', 'about', 'services', 'resources', 'contact',''].map((item) => (
+          {['home', 'about', 'services', 'resources', 'contact','career',''].map((item) => (
             <motion.div
               key={item}
               className={`text-white transition-colors duration-200 ${isActive(item === 'home' ? '/' : `/${item}`) ? 'text-[#4DCCE6]' : 'hover:text-[#4DCCE6]'}`}

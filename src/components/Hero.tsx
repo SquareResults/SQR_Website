@@ -201,9 +201,9 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
       <div className="relative z-1 flex flex-col items-center justify-center h-full text-center text-white bg-black bg-opacity-30 p-6 rounded-lg">
         <h1 className="text-10xl md:text-7xl font-bold mb-6 mt-80">
-          <span className="text-white tracking-wider">Step Into Your Dream Job</span>
+          <span className="text-white tracking-wider">Making the Job Search Easier</span>
           <br />
-          <span className="text-white md:text-5xl tracking-wide">no blackholes, just results</span>
+          <span className="text-[#BEBEBE] md:text-5xl tracking-wide">No Blackholes, just Results</span>
         </h1>
         {/* <p className="text-xl text-white mb-12 max-w-2xl mx-auto">
           A thriving community of HR and TA professionals sharing insights, solving hiring challenges, and shaping the future of recruitment.
