@@ -103,7 +103,7 @@ const TeamSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-[#081321] mb-8 tracking-wide">Build By Passionate People</h2>
+          <h2 className="text-4xl font-bold text-[#081321] mb-8 tracking-wide">Built By Passionate People</h2>
           <p className="mt-10 text-3xl text-[#081321] mb-8 tracking-wide">Meet Our Core Team</p>
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

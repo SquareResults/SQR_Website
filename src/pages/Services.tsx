@@ -42,7 +42,7 @@ const Services = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-[#081321] mb-6">
-            OUR <span className="text-[#4DCCE6]">SERVICES</span>
+            Our <span className="text-[#4DCCE6]">Services</span>
           </h1>
         </motion.div>
 
@@ -75,7 +75,7 @@ const Services = () => {
             className="text-center mb-16"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-[#081321] mb-6">
-              COMMUNITY
+              Community
             </h1>
           </motion.div>
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">

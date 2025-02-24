@@ -63,12 +63,12 @@ export function DemoForm({ open, onOpenChange }: { open: boolean; onOpenChange: 
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[600px] overflow-hidden bg-black bg-opacity-75 shadow-lg rounded-lg">
+      <DialogContent className="sm:max-w-[600px] overflow-hidden bg-black bg-opacity-100 shadow-lg rounded-lg">
         <button
           onClick={handleCancel}
-          className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none"
+          className="bg-white absolute right-4 top-4 rounded-sm opacity-100 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none"
         >
-          <X className="h-4 w-4 text-black" />
+          <X className="h-4 w-4" />
           <span className="sr-only">Close</span>
         </button>
         
@@ -194,7 +194,7 @@ export function DemoForm({ open, onOpenChange }: { open: boolean; onOpenChange: 
                   type="button"
                   variant="outline"
                   onClick={handleCancel}
-                  className="px-8 rounded-full text-white border-white"
+                  className="px-8 rounded-full text-black border-white"
                 >
                   Cancel
                 </Button>
