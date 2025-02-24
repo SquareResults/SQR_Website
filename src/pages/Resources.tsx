@@ -3,6 +3,7 @@ import { FileText, Video, BookOpen, Download } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import BlogsSection from "@/components/BlogsSection";
+import Footer from "@/components/Footer";
 
 const Resources = () => {
   const resources = [
@@ -101,6 +102,7 @@ const Resources = () => {
         </motion.div>
       </div>
       <BlogsSection />
+      <Footer/>
     </div>
   );
 };

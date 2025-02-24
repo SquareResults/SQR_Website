@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { UserCheck, Building, ChartBar } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const services = [
   {
@@ -99,6 +100,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
