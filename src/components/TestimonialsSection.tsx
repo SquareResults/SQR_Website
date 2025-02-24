@@ -61,9 +61,9 @@ const TestimonialsSection = () => {
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => {
                   if (i < Math.floor(testimonial.rating)) {
-                    return <Star key={i} className="w-5 h-5 text-yellow-500" />;
+                    return <Star key={i} className="w-5 h-5 text-yellow-500 fill-current" />;
                   } else if (i < testimonial.rating) {
-                    return <StarHalf key={i} className="w-5 h-5 text-yellow-500" />;
+                    return <StarHalf key={i} className="w-5 h-5 text-yellow-500 fill-current" />;
                   } else {
                     return <StarOff key={i} className="w-5 h-5 text-gray-300" />;
                   }

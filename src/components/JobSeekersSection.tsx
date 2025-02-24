@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FileText, Users, CheckCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -74,7 +74,20 @@ const FeatureCard = ({ feature, index }: { feature: typeof features[0], index: n
 
 const JobSeekersSection = () => {
   const [api, setApi] = useState<any>(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const plugin = Autoplay({ delay: 4000, stopOnInteraction: true });
+
+  useEffect(() => {
+    if (api) {
+      const onSelect = () => {
+        setSelectedIndex(api.selectedScrollSnap());
+      };
+      api.on('select', onSelect);
+      return () => {
+        api.off('select', onSelect);
+      };
+    }
+  }, [api]);
 
   return (
     <section className="py-24 relative overflow-hidden">
@@ -137,7 +150,7 @@ const JobSeekersSection = () => {
             key={index}
             className={cn(
               "w-2.5 h-2.5 rounded-full transition-colors duration-300",
-              api?.selectedScrollSnap() === index ? "bg-gray-800" : "bg-gray-300"
+              selectedIndex === index ? "bg-gray-800" : "bg-gray-300"
             )}
             onClick={() => api?.scrollTo(index)}
           />

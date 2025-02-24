@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
 
 const CareersSection: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -40,21 +41,21 @@ const CareersSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-secondary text-white min-h-screen">
-      <div className="container mx-auto px-12">
-        <h1 className="text-4xl font-bold mb-8 text-center">Careers</h1>
+    <section className="py-12 text-white min-h-screen">
+      <div className="container mx-auto px-24">
+      <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+      <h1 className="text-4xl md:text-5xl font-bold text-[#081321] mb-6">Careers</h1>
+      </motion.div>
         <div className="flex justify-between mb-8">
-          <input
-            type="text"
-            placeholder="Search jobs..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="px-4 py-2 rounded bg-gray-200 text-gray-700 w-full max-w-md"
-          />
           <select
             value={departmentFilter}
             onChange={(e) => setDepartmentFilter(e.target.value)}
-            className="px-4 py-2 rounded bg-gray-200 text-gray-700 ml-4"
+            className="px-12 py-2 rounded bg-black-200 text-gray-700 ml-4"
           >
             <option value="">All Departments</option>
             <option value="Engineering">Engineering</option>
@@ -64,14 +65,23 @@ const CareersSection: React.FC = () => {
           <select
             value={locationFilter}
             onChange={(e) => setLocationFilter(e.target.value)}
-            className="px-4 py-2 rounded bg-gray-200 text-gray-700 ml-4"
+            className="px-12 py-2 rounded bg-black-200 text-gray-700 ml-4"
           >
             <option value="">All Locations</option>
             <option value="New York, NY">New York, NY</option>
             <option value="San Francisco, CA">San Francisco, CA</option>
             {/* Add more locations as needed */}
           </select>
+          <input
+            type="text"
+            placeholder="Search jobs..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="px-12 py-2 rounded bg-black-200 text-gray-700 w-full max-w-md"
+          />
+          
         </div>
+        
         <div className="grid grid-cols-1 gap-8">
           {filteredJobs.map(job => (
             <div key={job.id} className="p-6 border border-gray-300 rounded-lg shadow-lg bg-white text-gray-700">
