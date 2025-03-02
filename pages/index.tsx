@@ -103,7 +103,6 @@ const Home = () => {
             ref={chatIconRef}
           >
             <Button 
-               ref= {chatIconRef} 
                onClick={toggleChat} 
                size="icon" 
                className="rounded-full size-14 p-2 bg-gray shadow-lg">
@@ -163,7 +162,7 @@ const Home = () => {
                               children={message.content}
                               remarkPlugins = {[remarkGfm]}
                               components={{
-                                code({ node, inline,  className, children, ...props }) {
+                                code({ node, inline, className, children, ...props }: { node?: any; inline?: boolean; className?: string; children?: React.ReactNode }) {
                                   return inline ? (
                                     <code {...props} className="bg-gray-200 rounded px-1"> {children}</code>
                                   ):(

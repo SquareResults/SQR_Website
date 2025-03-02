@@ -1,0 +1,16 @@
+{
+  "pages": {
+    "/api/gemini/route": [
+      "static/chunks/webpack-80acfc70146bb997.js",
+      "static/chunks/4bd1b696-20882bf820444624.js",
+      "static/chunks/main-app-bc5207bdfc61052d.js",
+      "static/chunks/app/api/gemini/route-fdb59970ba6ca501.js"
+    ],
+    "/api/openai/route": [
+      "static/chunks/webpack-80acfc70146bb997.js",
+      "static/chunks/4bd1b696-20882bf820444624.js",
+      "static/chunks/main-app-bc5207bdfc61052d.js",
+      "static/chunks/app/api/openai/route-189c074a7d4b85c3.js"
+    ]
+  }
+}

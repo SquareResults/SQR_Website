@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "middleware": {},
+  "functions": {
+    "/api/openai/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/openai/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/openai/route.js"
+      ],
+      "name": "app/api/openai/route",
+      "page": "/api/openai/route",
+      "matchers": [
+        {
+          "regexp": "^/api/openai$",
+          "originalSource": "/api/openai"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "0RjVBX9f2vzxjQZ3D6LyD",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "1NjmkdvS6hsHJQvSNh88oVfhM3DNPl268aKUL9oVdLk=",
+        "__NEXT_PREVIEW_MODE_ID": "2f52fd2ec8670f62d0fc956bd8938fd5",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "6e5e970013137dd634a8fd411378b4fabf2091e93ead356a8ae377239946ad8b",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "1430f855e4692b26c8ee1a65fe866bd0ca5c9fbbc702463aafd0b314c39e81b0"
+      }
+    }
+  },
+  "sortedMiddleware": []
+}
