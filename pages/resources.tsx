@@ -1,10 +1,11 @@
-import { motion } from "framer-motion";
-import { FileText, Video, BookOpen, Download } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { FileText, Video, BookOpen, Download, MessageCircle, ArrowDownCircleIcon } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import BlogsSection from "@/components/BlogsSection";
 import Footer from "@/components/Footer";
-import React from "react";
+import React, { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 const Resources = () => {
   const resources = [
@@ -31,8 +32,11 @@ const Resources = () => {
     },
   ];
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-[#f0f4f8] to-[#d9e2ec]">
+  const [showChatIcon, setShowChatIcon] = useState(true);
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const chatIconRef = React.useRef(null);
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-[#f0f4f8] to-[#d9e2ec]">
       <Navbar />
       <div className="container mx-auto px-6 py-24 pt-32">
         <motion.div
@@ -103,6 +107,27 @@ const Resources = () => {
         </motion.div>
       </div>
       <BlogsSection />
+      <AnimatePresence>
+        {showChatIcon && (
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 100 }}
+            transition={{ duration: 0.2 }}
+            className="fixed bottom-4 right-4 z-50"
+            ref={chatIconRef}
+          >
+            <Button>
+              {!isChatOpen ? (
+                <MessageCircle className="size-12" />
+              ) : (
+                <ArrowDownCircleIcon />
+              )}
+              
+            </Button>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <Footer />
     </div>
   );
