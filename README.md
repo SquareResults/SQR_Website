@@ -1,37 +1,36 @@
-# Square Results
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Project Description
+## Getting Started
 
-The Futuristic Interactive Showcase is a cutting-edge web application designed to revolutionize the talent acquisition and job searching process. Leveraging advanced AI-driven solutions, the platform provides a seamless, engaging, and empowering experience for both job seekers and recruiters.
+First, run the development server:
 
-### Key Features
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- **RADAR**: A premier product offering a curated selection of industry-leading professionals, enhancing visibility and recognition for elite candidates. Includes tools like Web Portfolio and accelerated job search solutions.
-- **SWFT**: An innovative solution designed to streamline the job search process, making it faster and more dynamic. Utilizes AI technology to match job seekers with suitable positions and provide personalized recommendations.
-- **SquareTop**: An exclusive network for corporate and business leaders to connect with peers and industry experts. Facilitates thought-provoking discussions, strategy exchanges, and powerful alliances.
-- **SquareCircle**: A supportive and informative space for corporate and business professionals to connect, share insights, and discover new opportunities. Aims to foster a collaborative environment for efficient talent discovery.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Sections
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **About Section**: Provides an overview of the company's mission and vision.
-- **Mission Section**: Details the company's commitment to leveraging AI and technology for talent acquisition.
-- **CEO Section**: Features insights and messages from the CEO.
-- **Team Section**: Introduces the team members with their LinkedIn profiles and brief descriptions.
-- **Testimonials Section**: Showcases reviews and feedback from users.
-- **Partners Section**: Highlights the company's partners with their logos.
-- **Contact Section**: Allows users to get in touch with the company.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Technologies Used
+## Learn More
 
-- **React**: A JavaScript library for building user interfaces.
-- **Framer Motion**: A library for creating animations.
-- **Tailwind CSS**: A utility-first CSS framework for styling.
-- **Lucide React**: A library for icons.
+To learn more about Next.js, take a look at the following resources:
 
-### Getting Started
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-To get started with the project, follow these steps:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/futuristic-interactive-showcase.git
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
